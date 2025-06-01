@@ -3,10 +3,13 @@ import './globals.css'
 import { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import WhatsappButton from '@/components/WAButton'  // Import komponen WhatsappButton
+// import WhatsappChat from '@/components/WAChat'
 
 export const metadata: Metadata = {
   title: 'BengsHonda | Dealer Motor Honda Terpercaya',
-  description: 'Temukan motor Honda terbaik di BengsHonda. Harga terbaik, layanan profesional, dan promo menarik setiap hari!',
+  description:
+    'Temukan motor Honda terbaik di BengsHonda. Harga terbaik, layanan profesional, dan promo menarik setiap hari!',
   keywords: 'motor honda, dealer honda, bengshonda, beli motor honda, kredit motor honda',
   openGraph: {
     title: 'BengsHonda',
@@ -18,7 +21,7 @@ export const metadata: Metadata = {
         url: '/images/hero.jpg',
         width: 1200,
         height: 630,
-        alt: 'Motor Honda Terbaru'
+        alt: 'Motor Honda Terbaru',
       },
     ],
     locale: 'id_ID',
@@ -33,6 +36,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <WhatsappButton /> 
+        {/* <WhatsappChat /> */}
       </body>
     </html>
   )
