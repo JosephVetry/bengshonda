@@ -39,12 +39,14 @@ export default function Testimonials() {
               key={index}
               className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition text-left"
             >
-              <p className="text-gray-700 mb-4 italic">"{t.comment}"</p>
+              <p className="text-gray-700 mb-4 italic">&ldquo;{t.comment}&rdquo;</p>
               <div className="flex items-center gap-4">
-                <img
+                <Image
                   src={t.image}
                   alt={t.name}
-                  className="w-12 h-12 rounded-full object-cover"
+                  width={48}
+                  height={48}
+                  className="rounded-full object-cover"
                 />
                 <div>
                   <p className="font-semibold">{t.name}</p>
