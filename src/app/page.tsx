@@ -7,7 +7,6 @@ export default function Home() {
     <>
       <Hero />
       <Features />
-      {/* Tambah section lainnya di sini nanti */}
       <Testimonials />
     </>
   )

@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-8 mt-16">
@@ -12,10 +14,26 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-4">Navigasi</h3>
           <ul className="space-y-2 text-gray-300">
-            <li><a href="/" className="hover:underline">Beranda</a></li>
-            <li><a href="/produk" className="hover:underline">Produk</a></li>
-            <li><a href="/tentang" className="hover:underline">Tentang Kami</a></li>
-            <li><a href="/kontak" className="hover:underline">Kontak</a></li>
+            <li>
+              <Link href="/" className="hover:underline">
+                Beranda
+              </Link>
+            </li>
+            <li>
+              <Link href="/produk" className="hover:underline">
+                Produk
+              </Link>
+            </li>
+            <li>
+              <Link href="/tentang" className="hover:underline">
+                Tentang Kami
+              </Link>
+            </li>
+            <li>
+              <Link href="/kontak" className="hover:underline">
+                Kontak
+              </Link>
+            </li>
           </ul>
         </div>
 
